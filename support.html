@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Blink!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        .content {
+            padding: 80px 0;
+            background-color: var(--light-color);
+            min-height: 70vh;
+        }
+        
+        .content .container {
+            max-width: 800px;
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: var(--secondary-color);
+            margin: 30px 0 15px;
+        }
+        
+        p, ul, ol {
+            margin-bottom: 20px;
+        }
+        
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .contact-method {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+        
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .faq-item {
+            margin-bottom: 30px;
+        }
+        
+        .faq-question {
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="Blink! Logo" class="logo-image">
+                <h1 class="logo">BLINK!</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="container">
+            <h1>Support</h1>
+            
+            <p>Need help with Blink!? We're here to assist you. Check out our frequently asked questions below or contact us directly.</p>
+            
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <p class="faq-question">How do I play Blink!?</p>
+                <p>Blink! is a memory game where you'll be shown an image with three characteristics (Shape, Color, Special) for a brief moment. After the image disappears, you'll need to answer questions about what you saw. Each correct answer earns you points, while incorrect answers deduct points.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">How does the stage system work?</p>
+                <p>Each stage consists of 10 rounds. As you advance to higher stages, the game becomes more challenging with items appearing for less time (decreases by 0.1 seconds per stage, minimum 0.3 seconds) and points per correct answer increasing (base 10 points + stage multiplier).</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">How do I create an account?</p>
+                <p>You can create an account by tapping the "Sign Up" button on the login screen. You can register using your email and password or continue as a guest. Creating an account allows you to save your progress and compete on the leaderboards.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">I forgot my password. What should I do?</p>
+                <p>On the login screen, tap "Forgot Password" and follow the instructions to reset your password. You'll receive an email with a link to create a new password.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">How do I view the leaderboard?</p>
+                <p>You can access the leaderboard from the main menu. The leaderboard shows the top scores from players around the world as well as your personal best scores.</p>
+            </div>
+            
+            <h2>Contact Us</h2>
+            
+            <p>If you couldn't find the answer to your question in the FAQ, please feel free to contact us directly. We aim to respond to all inquiries within 24-48 hours.</p>
+            
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email Support</h3>
+                    <p>support@blink-game.app</p>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">🐦</div>
+                    <h3>Twitter</h3>
+                    <p>@BlinkGameApp</p>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">💬</div>
+                    <h3>Discord</h3>
+                    <p>discord.gg/blinkgame</p>
+                </div>
+            </div>
+            
+            <h2>Reporting Issues</h2>
+            
+            <p>If you encounter any bugs or technical issues while playing Blink!, please provide the following information when contacting us:</p>
+            
+            <ul>
+                <li>Your device model and operating system version</li>
+                <li>The version of Blink! you're using</li>
+                <li>A detailed description of the issue</li>
+                <li>Steps to reproduce the issue, if possible</li>
+                <li>Screenshots or screen recordings, if applicable</li>
+            </ul>
+            
+            <p>This information will help us identify and fix the issue as quickly as possible.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Blink! All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="support.html">Support</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
