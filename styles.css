@@ -163,20 +163,10 @@ nav ul li a:hover {
     height: 50px;
 }
 
-/* Specific sizing for App Store badge (SVG) */
-.app-button img[src*="app-store"] {
+/* Set consistent size for all app store badges */
+.app-button img {
     height: 40px;
     width: auto;
-}
-
-/* Specific sizing for Google Play badge (PNG) */
-.app-button img[src*="google-play"] {
-    height: 47px;
-    width: auto;
-}
-
-/* Ensure both images maintain aspect ratio */
-.app-button img {
     object-fit: contain;
 }
 
