@@ -123,8 +123,15 @@ nav ul li a:hover {
 }
 
 .hero-image {
-    flex: 1;
+    margin-top: 40px;
     text-align: center;
+}
+
+.hero-image img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .hero h2 {
