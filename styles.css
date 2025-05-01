@@ -64,12 +64,12 @@ header .container {
     align-items: center;
 }
 
-.logo-container {
+a.logo-container {
     display: flex;
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    color: white;
+    color: white !important;
 }
 
 .logo-image {
