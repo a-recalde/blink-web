@@ -145,6 +145,15 @@ nav ul li a:hover {
 
 .app-button img {
     height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.app-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
 }
 
 /* Features Section */
