@@ -150,10 +150,10 @@ nav ul li a:hover {
     gap: 20px;
 }
 
-.app-button img {
-    height: 50px;
-    width: auto;
-    object-fit: contain;
+.app-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 .app-button {
@@ -161,6 +161,23 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     height: 50px;
+}
+
+/* Specific sizing for App Store badge (SVG) */
+.app-button img[src*="app-store"] {
+    height: 40px;
+    width: auto;
+}
+
+/* Specific sizing for Google Play badge (PNG) */
+.app-button img[src*="google-play"] {
+    height: 47px;
+    width: auto;
+}
+
+/* Ensure both images maintain aspect ratio */
+.app-button img {
+    object-fit: contain;
 }
 
 /* Features Section */
