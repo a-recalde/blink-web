@@ -53,55 +53,131 @@ img {
 
 /* Header */
 header {
-    background-color: var(--light-color);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background-color: var(--primary-purple);
+    color: white;
+    padding: 20px 0;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .logo-image {
-    width: 40px;
     height: 40px;
-    margin-right: 10px;
-    border-radius: 8px;
+    width: auto;
 }
 
 .logo {
-    font-size: 2.5rem;
+    font-size: 24px;
     font-weight: 900;
-    color: var(--primary-purple);
     letter-spacing: 2px;
     margin: 0;
 }
 
+/* Navigation */
 nav ul {
     display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li {
+nav li {
     margin-left: 30px;
 }
 
-nav ul li a {
-    font-weight: 600;
-    transition: color 0.3s ease;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-nav ul li a:hover {
+nav a:hover {
     color: var(--accent-blue);
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: var(--primary-purple);
+        padding: 80px 20px 20px;
+        transition: right 0.3s ease;
+        z-index: 98;
+    }
+    
+    nav.active {
+        right: 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav li {
+        margin: 15px 0;
+        width: 100%;
+    }
+    
+    nav a {
+        font-size: 1.2rem;
+        display: block;
+        width: 100%;
+    }
+    
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+    
+    .menu-toggle {
+        position: relative;
+        z-index: 99;
+    }
 }
 
 /* Hero Section */
